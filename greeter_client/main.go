@@ -21,8 +21,8 @@ package main
 
 import (
 	"context"
+	pb "example-gateway/helloworld/gen/go"
 	"flag"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 	"log"
 	"time"
 
