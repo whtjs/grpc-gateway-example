@@ -22,12 +22,12 @@ package main
 import (
 	"context"
 	"flag"
+	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 	"log"
 	"time"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
 const (
@@ -35,7 +35,7 @@ const (
 )
 
 var (
-	addr = flag.String("addr", "localhost:50051", "the address to connect to")
+	addr = flag.String("addr", "localhost:50050", "the address to connect to")
 	name = flag.String("name", defaultName, "Name to greet")
 )
 
